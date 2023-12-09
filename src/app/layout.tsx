@@ -1,5 +1,5 @@
+import { fonts } from "@/app/fonts";
 import { Navbar } from "@/components/layout/navbar";
-import { fonts } from "@/fonts/google";
 import "@/styles/globals.css";
 import { cn } from "@/utils/classnames";
 import type { Metadata } from "next";

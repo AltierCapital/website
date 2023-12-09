@@ -2,7 +2,7 @@ import typographyPlugin from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 import animatePlugin from "tailwindcss-animate";
 import radixPlugin from "tailwindcss-radix";
-import defaultTheme from "tailwindcss/defaultTheme.js";
+import { fontFamily } from "tailwindcss/defaultTheme.js";
 import plugin from "tailwindcss/plugin";
 
 export default ({
@@ -101,8 +101,9 @@ export default ({
         },
       },
       fontFamily: {
-        montserrat: ["var(--font-montserrat)", "sans-serif"],
-        sans: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],
+        clashGrotesk: ["var(--font-clash-grotesk)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
+        sans: ["var(--font-montserrat)", ...fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {

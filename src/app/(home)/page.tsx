@@ -14,9 +14,9 @@ const Home = () => (
       </div>
     </div>
     <section className="w-full h-full flex flex-col justify-center items-center gap-y-8 z-10">
-      <h1 className="text-[#b7b7b7] text-4xl tracking-tight md:text-5xl font-poppins font-medium">
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-300 to-gray-700 text-4xl md:text-5xl lg:text-6xl font-clashGrotesk font-medium">
         Altier Capital{" "}
-        <span role="image" aria-label="sparkles">
+        <span role="image" aria-label="sparkles" className="text-white">
           ✨
         </span>
       </h1>
