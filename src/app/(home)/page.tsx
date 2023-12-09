@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { GradientButton } from "@/components/ui/gradient-button";
 import Image from "next/image";
 import SphereImage from "~/images/sphere.svg";
 
@@ -30,7 +31,7 @@ const Home = () => (
 
       <div className="flex gap-x-4">
         <Button variant="secondary">Portfolio</Button>
-        <Button>Contact us</Button>
+        <GradientButton>Contact us</GradientButton>
       </div>
     </section>
   </>
