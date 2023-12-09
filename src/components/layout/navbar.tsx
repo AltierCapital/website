@@ -6,7 +6,7 @@ import Link from "next/link";
 import AltierLogo from "~/images/logo.png";
 
 export const Navbar = () => (
-  <nav className="w-full flex justify-around items-center fixed z-10">
+  <nav className="w-full flex justify-around items-center fixed z-30">
     <Link href="/">
       <Image
         priority
@@ -33,17 +33,32 @@ export const Navbar = () => (
 
     <ul className="flex gap-x-4">
       <li>
-        <a href="/" className="cursor-pointer">
+        <a
+          href="https://github.com/AltierCapital"
+          target="_blank"
+          rel="noreferrer"
+          className="cursor-pointer"
+        >
           <GitHubIcon className="w-5 h-5 text-white hover:text-gray-300" />
         </a>
       </li>
       <li>
-        <a href="/" className="cursor-pointer">
+        <a
+          href="https://discord.com/invite/GbFGHTdez4"
+          target="_blank"
+          rel="noreferrer"
+          className="cursor-pointer"
+        >
           <DiscordIcon className="w-5 h-5 text-white hover:text-gray-300" />
         </a>
       </li>
       <li>
-        <a href="/" className="cursor-pointer">
+        <a
+          href="https://twitter.com/altiercapital"
+          target="_blank"
+          rel="noreferrer"
+          className="cursor-pointer"
+        >
           <TwitterIcon className="w-5 h-5 text-white hover:text-gray-300" />
         </a>
       </li>
