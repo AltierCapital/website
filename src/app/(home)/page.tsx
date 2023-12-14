@@ -1,19 +1,10 @@
+import { HomeCirclesBackground } from "@/app/(home)/circles";
 import { Button } from "@/components/ui/button";
 import { GradientButton } from "@/components/ui/gradient-button";
-import Image from "next/image";
-import SphereImage from "~/images/sphere.svg";
 
 const Home = () => (
   <div className="relative w-screen h-screen overflow-hidden">
-    <div className="absolute h-full w-full bottom-0 flex items-end">
-      <div className="relative mx-auto max-h-64">
-        <Image
-          src={SphereImage}
-          alt="Globe Sphere"
-          className="object-contain w-full h-full bottom-0"
-        />
-      </div>
-    </div>
+    <HomeCirclesBackground />
     <div className="w-full h-full flex flex-col justify-center items-center gap-y-8 z-10">
       <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-50 to-gray-500/20 text-4xl md:text-5xl lg:text-6xl font-clashGrotesk font-medium">
         Altier Capital{" "}

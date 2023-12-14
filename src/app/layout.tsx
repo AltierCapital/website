@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { readonly children: React.ReactNode }) => (
   <html lang="fr" className={cn("min-w-[360px] scroll-smooth bg-black", fonts)}>
-    <body className="flex min-h-screen flex-1 flex-col font-sans antialiased">
+    <body className="flex !h-[unset] min-h-screen flex-1 flex-col font-sans antialiased">
       <Navbar />
 
       <Image
@@ -43,7 +43,7 @@ const RootLayout = ({ children }: { readonly children: React.ReactNode }) => (
         className="object-cover w-full h-full absolute top-0 left-0"
       />
 
-      <main className="flex min-w-0 flex-auto flex-col">{children}</main>
+      <main className="flex w-full max-w-[100vw] flex-col">{children}</main>
     </body>
   </html>
 );
