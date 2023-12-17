@@ -9,7 +9,7 @@ const Home = () => (
     <HomeCirclesBackground />
     <div className="w-full h-full flex flex-col justify-center items-center gap-y-8 z-10">
       <div className="flex flex-nowrap">
-        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-50 to-gray-500/20 text-4xl md:text-5xl lg:text-6xl font-clashGrotesk font-medium">
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-50 to-gray-500/20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-clashGrotesk font-medium">
           Altier Capital{" "}
         </h1>
 
@@ -24,7 +24,7 @@ const Home = () => (
         </div>
       </div>
 
-      <p className="text-white max-w-xl text-center text-sm md:text-base px-10">
+      <p className="text-white max-w-xl text-center text-sm md:text-base lg:text-lg px-10">
         Dive into an elite world, where the future of finance meets the
         innovation of web3. Unlocking unparalleled access to groundbreaking web3
         ventures. Are you ready to be at the forefront of the financial
