@@ -1,7 +1,7 @@
 import { HomeCirclesBackground } from "@/app/(home)/circles";
-import { Button } from "@/components/ui/button";
 import { GradientButton } from "@/components/ui/gradient-button";
 import Image from "next/image";
+import Link from "next/link";
 import SparklesImage from "~/images/sparkles.png";
 
 const Home = () => (
@@ -32,8 +32,11 @@ const Home = () => (
       </p>
 
       <div className="flex gap-x-4">
-        <Button variant="secondary">Portfolio</Button>
-        <GradientButton>Contact us</GradientButton>
+        {/* <Button variant="secondary">Portfolio</Button> */}
+
+        <Link href="https://discord.com/invite/GbFGHTdez4">
+          <GradientButton>Contact us</GradientButton>
+        </Link>
       </div>
     </div>
   </div>

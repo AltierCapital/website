@@ -16,7 +16,7 @@ export const Navbar = () => (
       />
     </Link>
 
-    <ul className="hidden gap-x-4 md:flex">
+    {/* <ul className="hidden gap-x-4 md:flex">
       <li className="px-2 py-1 hover:text-gray-300">
         <Link href="/">Our vision</Link>
       </li>
@@ -29,7 +29,7 @@ export const Navbar = () => (
       <li className="px-2 py-1 hover:text-gray-300">
         <Link href="/">Contact us</Link>
       </li>
-    </ul>
+    </ul> */}
 
     <ul className="flex gap-x-4">
       <li>
