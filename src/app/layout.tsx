@@ -8,14 +8,20 @@ import SkyBackground from "~/images/sky-background.svg";
 
 const title = "Altier Capital";
 const description = "Exclusive self-help group serving the community.";
+const url = "https://www.altiercapital.com";
 
 export const metadata: Metadata = {
   description,
+  metadataBase: new URL(url),
+  alternates: {
+    canonical: url,
+  },
   openGraph: {
     description,
     locale: "fr-FR",
     siteName: title,
     title,
+    url,
     type: "website",
   },
   robots: {
