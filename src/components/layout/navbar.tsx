@@ -44,7 +44,7 @@ export const Navbar = () => (
       </li>
       <li>
         <a
-          href="https://discord.com/invite/GbFGHTdez4"
+          href="https://discord.com/invite/altiercapital"
           target="_blank"
           rel="noreferrer"
           className="cursor-pointer"

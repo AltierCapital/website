@@ -34,7 +34,7 @@ const Home = () => (
       <div className="flex gap-x-4">
         {/* <Button variant="secondary">Portfolio</Button> */}
 
-        <Link href="https://discord.com/invite/GbFGHTdez4">
+        <Link href="https://discord.com/invite/altiercapital">
           <GradientButton>Contact us</GradientButton>
         </Link>
       </div>
