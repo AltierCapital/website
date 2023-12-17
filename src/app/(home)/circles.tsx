@@ -15,7 +15,11 @@ export const HomeCirclesBackground = () => (
         key={index}
         className={`-z-10 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ${className}`}
       >
-        <CircleBackground color={color} className={animation} />
+        <CircleBackground
+          color={color}
+          className={animation}
+          isInverted={animation.includes("reverse")}
+        />
       </div>
     ))}
   </>

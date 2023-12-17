@@ -1,10 +1,26 @@
 import { useId } from "react";
 
+const GRADIENT_VALUES = {
+  x1: "79",
+  y1: "16",
+  x2: "105",
+  y2: "237",
+};
+
+const INVERTED_GRADIENT_VALUES = {
+  x2: "79",
+  y2: "16",
+  x1: "105",
+  y1: "237",
+};
+
 export const CircleBackground = ({
   color,
+  isInverted = false,
   ...props
 }: React.ComponentPropsWithoutRef<"svg"> & {
   color: string;
+  isInverted?: boolean;
 }) => {
   const id = useId();
 
@@ -20,10 +36,7 @@ export const CircleBackground = ({
       <defs>
         <linearGradient
           id={id}
-          x1="79"
-          y1="16"
-          x2="105"
-          y2="237"
+          {...(isInverted ? INVERTED_GRADIENT_VALUES : GRADIENT_VALUES)}
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor={color} />
