@@ -25,9 +25,8 @@ const Home = () => (
       </div>
 
       <p className="text-white max-w-xl text-center text-sm md:text-base lg:text-lg px-10">
-        Where the vanguard of finance intersects with the innovation of Web3. 
-        Experience privileged access to the most groundbreaking Web3 ventures. 
-        
+        Where the vanguard of finance intersects with the innovation of Web3.
+        Experience privileged access to the most groundbreaking Web3 ventures.
         Are you prepared to lead and shape the future of financial innovation?
       </p>
 
