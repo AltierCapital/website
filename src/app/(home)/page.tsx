@@ -25,10 +25,10 @@ const Home = () => (
       </div>
 
       <p className="text-white max-w-xl text-center text-sm md:text-base lg:text-lg px-10">
-        Dive into an elite world, where the future of finance meets the
-        innovation of web3. Unlocking unparalleled access to groundbreaking web3
-        ventures. Are you ready to be at the forefront of the financial
-        revolution?
+        Where the vanguard of finance intersects with the innovation of Web3. 
+        Experience privileged access to the most groundbreaking Web3 ventures. 
+        
+        Are you prepared to lead and shape the future of financial innovation?
       </p>
 
       <div className="flex gap-x-4">
