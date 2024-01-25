@@ -16,20 +16,20 @@ export const Navbar = () => (
       />
     </Link>
 
-    {/* <ul className="hidden gap-x-4 md:flex">
+    <ul className="hidden gap-x-4 md:flex">
       <li className="px-2 py-1 hover:text-gray-300">
-        <Link href="/">Our vision</Link>
+        <Link href="/#portfolio">Portfolio</Link>
       </li>
       <li className="px-2 py-1 hover:text-gray-300">
-        <Link href="/">Portfolio</Link>
+        <Link href="/#vision">Our vision</Link>
       </li>
       <li className="px-2 py-1 hover:text-gray-300">
         <Link href="/">Partners</Link>
       </li>
       <li className="px-2 py-1 hover:text-gray-300">
-        <Link href="/">Contact us</Link>
+        <Link href="/contact">Contact us</Link>
       </li>
-    </ul> */}
+    </ul>
 
     <ul className="flex gap-x-4">
       <li>

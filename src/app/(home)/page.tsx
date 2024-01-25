@@ -1,4 +1,5 @@
 import { HomeCirclesBackground } from "@/app/(home)/circles";
+import { Button } from "@/components/ui/button";
 import { GradientButton } from "@/components/ui/gradient-button";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,14 +25,18 @@ const Home = () => (
         </div>
       </div>
 
-      <p className="text-white max-w-xl text-center text-sm md:text-base lg:text-lg px-10">
-        Where the vanguard of finance intersects with the innovation of Web3.
-        Experience privileged access to the most groundbreaking Web3 ventures.
-        Are you prepared to lead and shape the future of financial innovation?
-      </p>
+      <div className="text-white max-w-xl text-center text-sm md:text-base lg:text-lg px-10">
+        <p>
+          Where the vanguard of finance intersects with the innovation of Web3.
+          Experience privileged access to the most groundbreaking Web3 ventures.
+        </p>
+        <p>
+          Are you prepared to lead and shape the future of financial innovation?
+        </p>
+      </div>
 
       <div className="flex gap-x-4">
-        {/* <Button variant="secondary">Portfolio</Button> */}
+        <Button variant="secondary">Portfolio</Button>
 
         <Link href="https://tally.so/r/w4r77X">
           <GradientButton>Contact us</GradientButton>

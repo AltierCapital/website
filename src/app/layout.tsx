@@ -46,7 +46,7 @@ const RootLayout = ({ children }: { readonly children: React.ReactNode }) => (
       <Image
         src={SkyBackground}
         alt="Sky Background"
-        className="object-cover w-full h-full absolute top-0 left-0"
+        className="object-cover w-full h-full absolute top-0 left-0 z-0"
       />
 
       <main className="flex w-full max-w-[100vw] flex-col">{children}</main>
