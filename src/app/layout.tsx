@@ -43,12 +43,6 @@ const RootLayout = ({ children }: { readonly children: React.ReactNode }) => (
     <body className="flex !h-[unset] min-h-screen flex-1 flex-col font-sans antialiased">
       <Navbar />
 
-      <Image
-        src={SkyBackground}
-        alt="Sky Background"
-        className="object-cover w-full h-full absolute top-0 left-0 z-0"
-      />
-
       <main className="flex w-full max-w-[100vw] flex-col">{children}</main>
     </body>
   </html>
