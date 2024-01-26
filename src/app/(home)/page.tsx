@@ -1,5 +1,6 @@
 "use client";
 import { HomeCirclesBackground } from "@/app/(home)/circles";
+import { About } from "@/components/ui/about/about";
 import { Button } from "@/components/ui/button";
 import { Portfolio } from "@/components/ui/folio/portfolio";
 import { GradientButton } from "@/components/ui/gradient-button";
@@ -88,6 +89,15 @@ const Home = () => (
       <div className="mt-16 flex justify-center items-center">
         <Portfolio />
       </div>
+    </motion.section>
+
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id="vision"
+    >
+      <About />
     </motion.section>
   </>
 );
