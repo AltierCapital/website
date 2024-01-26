@@ -35,10 +35,10 @@ const Home = () => (
         </p>
       </div>
 
-      <div className="flex gap-x-4">
+      <div className="flex flex-col sm:flex-row gap-y-4 gap-x-4">
         <Button variant="secondary">Portfolio</Button>
 
-        <Link href="https://tally.so/r/w4r77X">
+        <Link href="/contact">
           <GradientButton>Contact us</GradientButton>
         </Link>
       </div>
