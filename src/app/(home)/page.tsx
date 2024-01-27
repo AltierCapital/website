@@ -68,11 +68,13 @@ const Home = () => (
       </div>
     </div>
 
+    {/* 
     <Image
       src={SkyBackground}
       alt="Sky Background"
       className="object-cover w-full h-full absolute top-full left-0 z-0"
     />
+*/}
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
