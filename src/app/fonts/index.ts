@@ -14,4 +14,9 @@ export const fontClashGrotesk = localFont({
   display: "swap",
 });
 
+export const fontLinearGrotesk = localFont({
+  src: "./linear-grotesk-bold.otf",
+  variable: "--font-linear-grotesk",
+  display: "swap",
+});
 export const fonts = `${fontMontserrat.variable} ${fontClashGrotesk.variable}`;

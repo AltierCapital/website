@@ -4,6 +4,7 @@ import { About } from "@/components/ui/about/about";
 import { Button } from "@/components/ui/button";
 import { Portfolio } from "@/components/ui/folio/portfolio";
 import { GradientButton } from "@/components/ui/gradient-button";
+import { Projects } from "@/components/ui/projects/projects";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -100,6 +101,15 @@ const Home = () => (
       id="vision"
     >
       <About />
+    </motion.section>
+
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id="projects"
+    >
+      <Projects />
     </motion.section>
   </>
 );

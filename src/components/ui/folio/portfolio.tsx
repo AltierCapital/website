@@ -1,5 +1,6 @@
 import { ProjectImage } from "@/components/ui/folio/project-image";
 import Image from "next/image";
+import Avail from "~/images/folio/avail.png";
 import Bitlight from "~/images/folio/bitlight.png";
 import Celestia from "~/images/folio/celestia.png";
 import EigenLayer from "~/images/folio/eigen.png";
@@ -30,6 +31,8 @@ export function Portfolio() {
       <ProjectImage src={Omnibot} alt={"omnibot x logo"} />
 
       <ProjectImage src={Bitlight} alt={"bitlight logo"} />
+
+      <Image className="w-20 md:w-36 mx-20" src={Avail} alt={"avail logo"} />
 
       <ProjectImage src={Printer} alt={"printer logo"} />
     </div>
