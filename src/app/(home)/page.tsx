@@ -3,6 +3,7 @@ import { HomeCirclesBackground } from "@/app/(home)/circles";
 import { About } from "@/components/ui/about/about";
 import { Button } from "@/components/ui/button";
 import { Portfolio } from "@/components/ui/folio/portfolio";
+import { Footer } from "@/components/ui/footer";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Projects } from "@/components/ui/projects/projects";
 import { motion } from "framer-motion";
@@ -109,6 +110,10 @@ const Home = () => (
         id="projects"
       >
         <Projects />
+      </motion.section>
+
+      <motion.section>
+        <Footer />
       </motion.section>
     </div>
   </>
