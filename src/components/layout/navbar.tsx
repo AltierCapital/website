@@ -3,7 +3,7 @@ import { GitHubIcon } from "@/components/icons/github";
 import { TwitterIcon } from "@/components/icons/twitter";
 import Image from "next/image";
 import Link from "next/link";
-import AltierLogo from "~/images/logo.png";
+import AltierLogo from "~/images/logo-xl.svg";
 
 export const Navbar = () => (
   <nav className="w-full flex justify-around items-center fixed z-30 backdrop-blur-sm">
@@ -12,7 +12,7 @@ export const Navbar = () => (
         priority
         src={AltierLogo}
         alt="Altier Capital Logo"
-        className="w-20 h-20"
+        className="w-36 h-20"
       />
     </Link>
 
