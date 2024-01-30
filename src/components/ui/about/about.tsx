@@ -7,8 +7,8 @@ import Red from "~/images/planets/red.png";
 
 export function About(): JSX.Element {
   return (
-    <div className="flex flex-col px-96">
-      <div className="flex flex-row justify-between items-center ">
+    <div className="flex flex-col md:px-96">
+      <div className="flex flex-row justify-between items-center px-20 md:space-x-40 ">
         <Idea
           title="Our vision"
           description="vision du penki"
@@ -17,7 +17,7 @@ export function About(): JSX.Element {
         <PlanetImage src={Red} alt={"red planet"} />
       </div>
 
-      <div className="flex flex-row justify-between items-center ">
+      <div className="flex flex-row justify-between items-center -ml-40 md:ml-10 ">
         <PlanetImage src={Blue} alt={"blue planet"} />
         <Idea
           title="Our members"
@@ -26,7 +26,7 @@ export function About(): JSX.Element {
         />
       </div>
 
-      <div className="flex flex-row justify-between items-center ">
+      <div className="flex flex-row justify-between items-center px-20 md:space-x-40">
         <Idea
           title="Text "
           description="lorem ipsum "
@@ -35,7 +35,7 @@ export function About(): JSX.Element {
         <PlanetImage src={Green} alt={"green planet"} />
       </div>
 
-      <div className="flex flex-row justify-between items-center ">
+      <div className="flex flex-row justify-between items-center -ml-40  md:ml-10">
         <PlanetImage src={Ochre} alt={"ochre planet"} />
 
         <Idea
