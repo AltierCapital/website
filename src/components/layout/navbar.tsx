@@ -6,7 +6,7 @@ import Link from "next/link";
 import AltierLogo from "~/images/logo.png";
 
 export const Navbar = () => (
-  <nav className="w-full flex justify-around items-center fixed z-30">
+  <nav className="w-full flex justify-around items-center fixed z-30 backdrop-blur-sm">
     <Link href="/">
       <Image
         priority
