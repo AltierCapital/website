@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { readonly children: React.ReactNode }) => (
   <html lang="fr" className={cn("min-w-[360px] scroll-smooth bg-black", fonts)}>
-    <body className="flex !h-[unset] min-h-screen flex-1 flex-col font-sans antialiased overflow-x-hidden">
+    <body className="flex !h-[unset] min-h-screen flex-1 flex-col font-sans antialiased ">
       <Navbar />
 
       <main className="flex w-full max-w-[100vw] flex-col">{children}</main>

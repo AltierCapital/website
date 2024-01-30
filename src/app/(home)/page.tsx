@@ -19,9 +19,9 @@ const Home = () => (
       className="object-cover w-full h-full absolute top-1 left-0 z-0"
     />
 
-    <div className="relative w-screen h-screen overflow-hidden">
+    <div className="relative w-screen h-screen overflow-x-hidden">
       <HomeCirclesBackground />
-      <div className="w-full h-full flex flex-col justify-center items-center gap-y-8 z-10">
+      <div className="container-snap w-full h-full flex flex-col justify-center items-center gap-y-8 z-10">
         <div className="flex flex-nowrap">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-50 to-gray-500/20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-clashGrotesk font-medium">
             Altier Capital{" "}
@@ -67,50 +67,50 @@ const Home = () => (
           </Link>
         </div>
       </div>
-    </div>
 
-    {/* 
+      {/* 
     <Image
       src={SkyBackground}
       alt="Sky Background"
       className="object-cover w-full h-full absolute top-full left-0 z-0"
     />
 */}
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      id="portfolio"
-    >
-      <div className="relative w-full h-full overflow-hidden">
-        <div className="flex justify-center items-center">
-          <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-50 to-gray-500/20 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-clashGrotesk font-medium">
-            Porfolio
-          </h1>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        id="portfolio"
+      >
+        <div className="relative w-full h-full overflow-hidden">
+          <div className="flex justify-center items-center">
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-50 to-gray-500/20 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-clashGrotesk font-medium">
+              Porfolio
+            </h1>
+          </div>
         </div>
-      </div>
-      <div className="mt-16 flex justify-center items-center">
-        <Portfolio />
-      </div>
-    </motion.section>
+        <div className="mt-16 flex justify-center items-center">
+          <Portfolio />
+        </div>
+      </motion.section>
 
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      id="vision"
-    >
-      <About />
-    </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        id="vision"
+      >
+        <About />
+      </motion.section>
 
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      id="projects"
-    >
-      <Projects />
-    </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        id="projects"
+      >
+        <Projects />
+      </motion.section>
+    </div>
   </>
 );
 
