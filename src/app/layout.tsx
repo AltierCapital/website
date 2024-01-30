@@ -3,8 +3,6 @@ import { Navbar } from "@/components/layout/navbar";
 import "@/styles/globals.css";
 import { cn } from "@/utils/classnames";
 import type { Metadata } from "next";
-import Image from "next/image";
-import SkyBackground from "~/images/sky-background.svg";
 
 const title = "Altier Capital";
 const description = "Exclusive self-help group serving the community.";
