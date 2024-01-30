@@ -6,7 +6,7 @@ import Link from "next/link";
 import AltierLogo from "~/images/logo-xl.svg";
 
 export const Navbar = () => (
-  <nav className="w-full flex justify-around items-center fixed z-30 backdrop-blur-sm font-linearGrotesk">
+  <nav className="w-full flex justify-around items-center fixed z-30 backdrop-blur-sm text-md md:text-xl font-linearGrotesk">
     <Link href="/">
       <Image
         priority
