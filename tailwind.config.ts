@@ -107,6 +107,7 @@ export default ({
       },
       fontFamily: {
         clashGrotesk: ["var(--font-clash-grotesk)", ...fontFamily.sans],
+        linearGrotesk: ["var(--font-linear-grotesk)", ...fontFamily.sans],
         montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
         sans: ["var(--font-montserrat)", ...fontFamily.sans],
       },
