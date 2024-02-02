@@ -24,9 +24,6 @@ export const Navbar = () => (
         <Link href="/#vision">Our vision</Link>
       </li>
       <li className="px-2 py-1 hover:text-gray-300">
-        <Link href="/">Partners</Link>
-      </li>
-      <li className="px-2 py-1 hover:text-gray-300">
         <Link href="/contact">Contact us</Link>
       </li>
     </ul>
