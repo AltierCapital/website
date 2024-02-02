@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { GradientButton } from "@/components/ui/gradient-button";
 import Image from "next/image";
-import Link from "next/link";
 import Altier from "~/images/logo-sm.png";
 
 export function Footer() {

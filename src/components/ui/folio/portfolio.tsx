@@ -25,7 +25,7 @@ export function Portfolio() {
           Porfolio
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-x-64 gap-y-10 md:gap-y-32 mt-10  ">
+      <div className="flex flex-wrap justify-center items-center gap-x-64 gap-y-10 md:gap-y-32 mt-10">
         <ProjectImage
           src={Celestia}
           alt="celestia logo"
@@ -41,7 +41,7 @@ export function Portfolio() {
             rel="noreferrer"
           >
             <Image
-              className="w-20 md:w-36 "
+              className="w-20 md:w-36"
               src={EigenLayer}
               alt="eigen layer logo"
             />

@@ -16,7 +16,7 @@ export function About(): JSX.Element {
       id="vision"
     >
       <div className="flex flex-col md:px-96">
-        <div className="flex flex-row justify-between items-center px-20 md:space-x-40 ">
+        <div className="flex flex-row justify-between items-center px-20 md:space-x-40">
           <Idea
             title="Our vision"
             description="vision du penki"
@@ -25,7 +25,7 @@ export function About(): JSX.Element {
           <PlanetImage src={Red} alt={"red planet"} />
         </div>
 
-        <div className="flex flex-row justify-between items-center -ml-40 md:ml-10 ">
+        <div className="flex flex-row justify-between items-center -ml-40 md:ml-10">
           <PlanetImage src={Blue} alt={"blue planet"} />
           <Idea
             title="Our members"

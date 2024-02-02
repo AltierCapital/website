@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export const PlanetImage = ({
   src,
   alt,
-}: Readonly<{ src: string; alt: string }>) => (
+}: Readonly<{ src: StaticImageData; alt: string }>) => (
   <Image
     src={src}
     alt={alt}
