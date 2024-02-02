@@ -1,19 +1,18 @@
-"use client";
 import { HomeCirclesBackground } from "@/app/(home)/circles";
 import { About } from "@/components/ui/about/about";
 import { Button } from "@/components/ui/button";
+import { CallToAction } from "@/components/ui/call-to-action";
 import { Portfolio } from "@/components/ui/folio/portfolio";
 import { Footer } from "@/components/ui/footer";
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Projects } from "@/components/ui/projects/projects";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import SkyBackground from "~/images/sky-background.svg";
 import SparklesImage from "~/images/sparkles.png";
 
 const Home = () => (
-  <>
+  <div>
     <Image
       src={SkyBackground}
       alt="Sky Background"
@@ -51,22 +50,7 @@ const Home = () => (
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-y-4 gap-x-4">
-          <Button
-            variant="secondary"
-            onClick={() =>
-              document
-                .getElementById("portfolio")
-                .scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Portfolio
-          </Button>
-
-          <Link href="/contact">
-            <GradientButton>Contact us</GradientButton>
-          </Link>
-        </div>
+        <CallToAction />
       </div>
 
       {/* 
@@ -76,47 +60,18 @@ const Home = () => (
       className="object-cover w-full h-full absolute top-full left-0 z-0"
     />
 */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        id="portfolio"
-      >
-        <div className="relative w-full h-full overflow-hidden">
-          <div className="flex justify-center items-center">
-            <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-50 to-gray-500/20 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-clashGrotesk font-medium">
-              Porfolio
-            </h1>
-          </div>
-        </div>
-        <div className="mt-16 flex justify-center items-center">
-          <Portfolio />
-        </div>
-      </motion.section>
 
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        id="vision"
-      >
-        <About />
-      </motion.section>
+      <div className="relative w-full h-full overflow-hidden">
+        <Portfolio />
+      </div>
 
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        id="projects"
-      >
-        <Projects />
-      </motion.section>
+      <About />
 
-      <motion.section>
-        <Footer />
-      </motion.section>
+      <Projects />
+
+      <Footer />
     </div>
-  </>
+  </div>
 );
 
 export default Home;
