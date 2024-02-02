@@ -1,4 +1,12 @@
-export function Idea({ title, description, subDescription }): JSX.Element {
+export function Idea({
+  title,
+  description,
+  subDescription,
+}: Readonly<{
+  title: string;
+  description: string;
+  subDescription: string;
+}>): JSX.Element {
   return (
     <div className="flex flex-col w-96 justify-start items-start my-52 gap-y-2">
       <div className="flex flex-row items-center">
