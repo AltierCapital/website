@@ -58,7 +58,7 @@ const Home = () => (
     />
 */}
 
-      <div className="relative w-full h-full overflow-hidden">
+      <div className="relative w-full h-fit overflow-hidden">
         <Portfolio />
       </div>
 
