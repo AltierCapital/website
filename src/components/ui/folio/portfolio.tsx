@@ -1,6 +1,5 @@
-"use client";
+import { FadeIn } from "@/components/ui/fade-in";
 import { ProjectImage } from "@/components/ui/folio/project-image";
-import { motion } from "framer-motion";
 import Avail from "~/images/folio/avail.png";
 import Bitlight from "~/images/folio/bitlight.png";
 import Celestia from "~/images/folio/celestia.png";
@@ -72,12 +71,7 @@ const PORTFOLIO_DATA = [
 
 export function Portfolio() {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      id="portfolio"
-    >
+    <FadeIn id="portfolio">
       <div className="flex justify-center items-center">
         <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-gray-50 to-gray-500/20 text-3xl md:text-5xl lg:text-6xl font-clashGrotesk font-medium">
           Porfolio
@@ -88,6 +82,6 @@ export function Portfolio() {
           <ProjectImage key={key} {...project} />
         ))}
       </div>
-    </motion.section>
+    </FadeIn>
   );
 }

@@ -1,7 +1,6 @@
-"use client";
 import { Idea } from "@/components/ui/about/idea-presentation";
 import { PlanetImage } from "@/components/ui/about/planet-image";
-import { motion } from "framer-motion";
+import { FadeIn } from "@/components/ui/fade-in";
 import Blue from "~/images/planets/blue.png";
 import Green from "~/images/planets/green.png";
 import Ochre from "~/images/planets/ochre.png";
@@ -9,12 +8,7 @@ import Red from "~/images/planets/red.png";
 
 export function About(): JSX.Element {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      id="vision"
-    >
+    <FadeIn id="vision">
       <div className="flex flex-col md:px-96">
         <div className="flex flex-row justify-between items-center px-20 md:space-x-40">
           <Idea
@@ -53,6 +47,6 @@ export function About(): JSX.Element {
           />
         </div>
       </div>
-    </motion.section>
+    </FadeIn>
   );
 }
