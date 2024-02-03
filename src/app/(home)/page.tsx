@@ -1,13 +1,10 @@
 import { HomeCirclesBackground } from "@/app/(home)/circles";
 import { About } from "@/components/ui/about/about";
-import { Button } from "@/components/ui/button";
 import { CallToAction } from "@/components/ui/call-to-action";
 import { Portfolio } from "@/components/ui/folio/portfolio";
 import { Footer } from "@/components/ui/footer";
-import { GradientButton } from "@/components/ui/gradient-button";
 import { Projects } from "@/components/ui/projects/projects";
 import Image from "next/image";
-import Link from "next/link";
 import SkyBackground from "~/images/sky-background.svg";
 import SparklesImage from "~/images/sparkles.png";
 
