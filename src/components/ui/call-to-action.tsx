@@ -11,7 +11,7 @@ export function CallToAction() {
         onClick={() =>
           document
             .getElementById("portfolio")
-            .scrollIntoView({ behavior: "smooth" })
+            ?.scrollIntoView({ behavior: "smooth" })
         }
       >
         Portfolio
