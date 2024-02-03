@@ -1,8 +1,8 @@
 import { HomeCirclesBackground } from "@/app/(home)/circles";
+import { Footer } from "@/components/layout/footer";
 import { About } from "@/components/ui/about/about";
 import { CallToAction } from "@/components/ui/call-to-action";
 import { Portfolio } from "@/components/ui/folio/portfolio";
-import { Footer } from "@/components/ui/footer";
 import { Projects } from "@/components/ui/projects/projects";
 import Image from "next/image";
 import SkyBackground from "~/images/sky-background.svg";
