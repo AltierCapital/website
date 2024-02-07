@@ -34,14 +34,14 @@ export const ProjectImage = ({ src, alt, href, btnClasses }: Props) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className={cn(
-          "w-56 h-28 md:w-72 md:h-44 bg-transparent  rounded-2xl relative p-6 overflow-hidden",
+          "w-56 h-28 md:w-72 md:h-44 bg-white/0 transition-colors duration-250 rounded-2xl relative p-6 overflow-hidden hover:bg-white/5",
           btnClasses,
           { "group-hover:overflow-visible": isHovered }, // Glow effect on hover
         )}
         type="button"
         style={{
           backgroundImage: isHovered
-            ? `radial-gradient(circle at ${position.x}px ${position.y}px, rgba(100,   100,   100,   0.5), transparent   80%)`
+            ? `radial-gradient(circle at ${position.x}px ${position.y}px,rgba(100, 100, 100, 0.5), transparent 80%)`
             : undefined,
         }}
       >
